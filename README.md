@@ -5,6 +5,7 @@ In this example we went through each of the steps of generating a programme with
 ## First Step
 Create the base application, this will error creating a stackoverflow exception
 
+'''
 class Program
 {
     public static void Main()
@@ -21,6 +22,7 @@ class Program
         return Fibonacci(n - 2) + Fibonacci(n - 1);
     }
 }
+'''
 
 ## Second Step
 Solves the stack overflow, however, takes too long to calculate large numbers
