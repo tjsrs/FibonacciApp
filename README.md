@@ -27,6 +27,7 @@ class Program
 ## Second Step
 Solves the stack overflow, however, takes too long to calculate large numbers
 
+```
 class Program
 {
     public static void Main()
@@ -47,10 +48,12 @@ class Program
             return Fibonacci(n - 2) + Fibonacci(n - 1);
     }
 }
+```
 
 ## Third Step
 Storing the numbers in sequence making it quicker to respond (Memoisation)
 
+```
 class Program
 {
     private static ulong[] cache;
@@ -80,10 +83,12 @@ class Program
         return tempcache;
     }
 }
+```
 
 ## Final Step
 Finished application with added comments for clarity and using the BigInteger datatype to manage numbers exceeding the ulong range.
 
+```
 using System.Numerics;
 
 class Program
@@ -146,3 +151,4 @@ class Program
         return tempStore;
     }
 }
+```
