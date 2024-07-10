@@ -2,7 +2,7 @@
 
 class Program
 {
-    // Cache array to store computed Fibonacci values for memoization
+    // Cache array to store computed Fibonacci values for memoisation
     private static BigInteger[]? cache;
 
     public static void Main()
@@ -54,7 +54,7 @@ class Program
             return cache[n];
         }
 
-        // Compute Fibonacci using memoization and store the result in the cache
+        // Compute Fibonacci using memoisation and store the result in the cache
         BigInteger tempStore = Fibonacci(n - 2) + Fibonacci(n - 1);
         cache[n] = tempStore;
         return tempStore;
